@@ -1,0 +1,68 @@
+ion-content{
+    img{
+        margin-top: 10%;
+        margin-left: 40%;
+        width: 80px;
+        height: 80px;
+   
+    }
+    ion-input{
+        
+         border:1px solid gray;
+         margin-top:5%;
+         height:40px;
+         width:300px;
+         margin-left: 7%;
+         padding-left: 10px;
+         margin-bottom: 5%;
+      }
+
+      #label{
+        color:lightblue;
+        margin-left: 7%;
+      }
+      #facebook{
+           width:130px;
+            height:40px;
+            margin-left:90px;
+            margin-top:25px;
+            z-index: 2;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            
+        }
+
+        #login{
+  margin-top: 25px;
+  z-index: 2;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  margin-left: 170px;
+  width:70px;
+  height:70px;
+  border:1px solid lightgray;
+
+}
+
+#google{
+ 
+    margin-left:190px;
+    width:135px;
+    height:40px;
+    
+
+}
+
+ #notYetRegistered{
+    margin-left: 35%;
+    margin-top:10%;
+    
+}
+
+
+}
+
+
+

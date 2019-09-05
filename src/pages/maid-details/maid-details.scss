@@ -1,0 +1,58 @@
+// .main{
+//     margin: 0;
+// }
+// .avatar{
+//     margin: auto;
+//     position: relative;
+//     }
+// .avatar{
+//     margin: auto;
+//     }   
+// .profilepic{
+//     margin: auto;
+//     }
+// #str{
+//     position: absolute;
+//     }
+// .btnn{
+//     background-color: white;
+//     margin-top: 10px;
+//     }
+// .crd{ 
+//     width : 100%;
+//     margin: 0;
+//     font-size: 14px;
+//     }
+  
+//     .selectBox{
+//         width:80px;
+//         height:25px;
+//         border-radius:8px;
+       
+//         outline: 1px;
+//         margin-left: 100px;
+        
+//       }
+
+//       .titles{
+//          margin-top: 5px;
+//          margin-left:15px;
+//          font-size: 16px;
+
+//          color: darkcyan;
+          
+//       }
+//       #marterials{
+//           margin-bottom: 70px;
+
+//       }
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    .selectBox{
+            margin-right: 8%
+    }
+}
+     

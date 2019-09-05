@@ -1,0 +1,28 @@
+<ion-menu  [content]="mycontent">
+    <ion-header>
+
+  <ion-navbar color="primary" >
+    <ion-title> Menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+    <ion-content>
+      <ion-list>
+      <img id="menuimg"src="assets/imgs/logo3.png">
+       <ion-title id="username">User Name</ion-title>
+
+       <ion-row class="menus"> <ion-col><ion-icon name="home"></ion-icon><ion-note>Home</ion-note></ion-col></ion-row>
+      
+       <ion-row class="menus" ><ion-col><ion-icon name="checkbox"><ion-note>My Orders</ion-note></ion-icon></ion-col> </ion-row>
+       
+        <ion-row class="menus"> <ion-col><ion-icon name="log-out"></ion-icon><ion-note>Logout</ion-note></ion-col></ion-row>
+      
+
+
+            </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+
+
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

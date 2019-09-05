@@ -1,0 +1,159 @@
+<ion-header>
+
+  <ion-navbar color="theme">
+    <ion-title>Avaliable Maids Near You</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="main" >
+
+    <ion-card class="crd" *ngFor="let maid of maids" class="btnn"  color="light" clear (click)="maidDetails(maid)">
+        <ion-item>
+          <ion-avatar class="avatar" item-start>
+            <ion-icon  id="str" name="radio-button-off"></ion-icon>
+            <img  class="profilepic" src="{{maid.img}}"> 
+            </ion-avatar>
+            <ion-avatar class="avatar" item-end>
+                <ion-icon name="bookmark"></ion-icon>
+                </ion-avatar>
+          <p>{{maid.name}}</p>
+           <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>{{maid.rating}}</ion-note></ion-col></ion-row>
+         </ion-item>
+      <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small disabled>
+              <ion-icon name="clock"></ion-icon>
+              <div>{{maid.tfrom}} - {{maid.tto}} PM </div>
+            </button>
+          </ion-col>
+          <ion-col>
+              <button ion-button icon-start clear small disabled>
+                  <ion-icon name="cash"></ion-icon>
+                <div>{{maid.Rate}}/Rs-/hr </div>
+              </button>
+            </ion-col>
+                </ion-row>
+      </ion-card>
+  
+
+    <!-- <button class="btnn"  color="light" clear  (click)="this.navCtrl.push('MaidDetailsPage')">
+      <ion-card class="crd" >
+          <ion-item>
+            <ion-avatar class="avatar" item-start>
+              <ion-icon  id="str" name="radio-button-off"></ion-icon>
+              <img  class="profilepic" src="assets/imgs/logo.png"> 
+              </ion-avatar>
+              <ion-avatar class="avatar" item-end>
+                  <ion-icon name="bookmark"></ion-icon>
+                  </ion-avatar>
+            <p>Marty McFly</p>
+             <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>4.5</ion-note></ion-col></ion-row>
+           </ion-item>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small disabled>
+                <ion-icon name="clock"></ion-icon>
+                <div>8:00 AM - 2:00 PM </div>
+              </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-start clear small disabled>
+                    <ion-icon name="cash"></ion-icon>
+                  <div>100/Rs-/hr </div>
+                </button>
+              </ion-col>
+                  </ion-row>
+        </ion-card>
+      </button>
+
+      <button class="btnn"  color="light" clear  (click)="this.navCtrl.push('MaidDetailsPage')">
+        <ion-card class="crd" >
+            <ion-item>
+              <ion-avatar class="avatar" item-start>
+                <ion-icon  id="str" name="radio-button-off"></ion-icon>
+                <img  class="profilepic" src="assets/imgs/logo.png"> 
+                </ion-avatar>
+                <ion-avatar class="avatar" item-end>
+                    <ion-icon name="bookmark"></ion-icon>
+                    </ion-avatar>
+              <p>Marty McFly</p>
+               <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>4.5</ion-note></ion-col></ion-row>
+             </ion-item>
+          <ion-row>
+              <ion-col>
+                <button ion-button icon-start clear small disabled>
+                  <ion-icon name="clock"></ion-icon>
+                  <div>8:00 AM - 2:00 PM </div>
+                </button>
+              </ion-col>
+              <ion-col>
+                  <button ion-button icon-start clear small disabled>
+                      <ion-icon name="cash"></ion-icon>
+                    <div>100/Rs-/hr </div>
+                  </button>
+                </ion-col>
+                    </ion-row>
+          </ion-card>
+        </button>
+
+        <button class="btnn"  color="light" clear  (click)="this.navCtrl.push('MaidDetailsPage')">
+          <ion-card class="crd" >
+              <ion-item>
+                <ion-avatar class="avatar" item-start>
+                  <ion-icon  id="str" name="radio-button-off"></ion-icon>
+                  <img  class="profilepic" src="assets/imgs/logo.png"> 
+                  </ion-avatar>
+                  <ion-avatar class="avatar" item-end>
+                      <ion-icon name="bookmark"></ion-icon>
+                      </ion-avatar>
+                <p>Marty McFly</p>
+                 <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>4.5</ion-note></ion-col></ion-row>
+               </ion-item>
+            <ion-row>
+                <ion-col>
+                  <button ion-button icon-start clear small disabled>
+                    <ion-icon name="clock"></ion-icon>
+                    <div>8:00 AM - 2:00 PM </div>
+                  </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small disabled>
+                        <ion-icon name="cash"></ion-icon>
+                      <div>100/Rs-/hr </div>
+                    </button>
+                  </ion-col>
+                      </ion-row>
+            </ion-card>
+          </button>
+
+          <button class="btnn"  color="light" clear  (click)="this.navCtrl.push('MaidDetailsPage')">
+            <ion-card class="crd" >
+                <ion-item>
+                  <ion-avatar class="avatar" item-start>
+                    <ion-icon  id="str" name="radio-button-off"></ion-icon>
+                    <img  class="profilepic" src="assets/imgs/logo.png"> 
+                    </ion-avatar>
+                    <ion-avatar class="avatar" item-end>
+                        <ion-icon name="bookmark"></ion-icon>
+                        </ion-avatar>
+                  <p>Marty McFly</p>
+                   <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>4.5</ion-note></ion-col></ion-row>
+                 </ion-item>
+              <ion-row>
+                  <ion-col>
+                    <button ion-button icon-start clear small disabled>
+                      <ion-icon name="clock"></ion-icon>
+                      <div>8:00 AM - 2:00 PM </div>
+                    </button>
+                  </ion-col>
+                  <ion-col>
+                      <button ion-button icon-start clear small disabled>
+                          <ion-icon name="cash"></ion-icon>
+                        <div>100/Rs-/hr </div>
+                      </button>
+                    </ion-col>
+                        </ion-row>
+              </ion-card>
+            </button> -->
+        
+  </ion-content>

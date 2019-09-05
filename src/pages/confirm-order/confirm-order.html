@@ -1,0 +1,172 @@
+
+<ion-header>
+
+    <ion-navbar color="theme"> 
+      <ion-title >Confirm Booking</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content class="main"> 
+          <ion-card class="crd" >
+              <ion-item id="fitem">
+                <ion-avatar class="avatar" item-start>
+                  <ion-icon  id="str" name="radio-button-off"></ion-icon>
+                  <img  class="profilepic" src="assets/imgs/logo.png"> 
+                  </ion-avatar>
+                  <ion-avatar class="avatar" item-end>
+                      <ion-icon name="bookmark"></ion-icon>
+                      </ion-avatar>
+                <p>Marty McFly</p>
+                 <ion-row> <ion-col><ion-icon name="star"></ion-icon><ion-note>4.5</ion-note></ion-col></ion-row>
+               </ion-item>
+            <ion-row>
+                <ion-col>
+                 
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small disabled>
+                        <ion-icon name="cash"></ion-icon>
+                      <div >100/Rs-/hr </div>
+                    </button>
+                  </ion-col>
+                      </ion-row>
+                  
+  
+                      <ion-row>
+                        <ion-col>
+                          
+                            
+                            <div class="titles">Duration </div>
+                         
+                        </ion-col>
+                        <ion-col>
+                          <ion-label id="labelbox" class="item item-input item-select">
+                            <select class="selectBox">
+                              <option>1 hr</option>
+                              <option>2 hr</option>
+                              <option>3 hr</option>
+                              <option>4 hr</option>
+  
+                            </select>
+                          </ion-label>
+  
+                          </ion-col>
+                              </ion-row>
+  
+                              <ion-row>
+                                <ion-col>
+                                 
+                                    
+                                    <div class="titles">Schedule </div>
+                                  
+                                </ion-col>
+                                <ion-col>
+                                  <ion-label>13 September 2018,12 pm</ion-label>
+                                  
+                                  </ion-col>
+                                      </ion-row>
+                                      
+  
+                                      <ion-row>
+                                        <ion-col>
+                                         
+                                            
+                                            <div class="titles" >Location </div>
+                                          
+                                        </ion-col>
+                                        <ion-col>
+                                          <ion-label>Georgia LA Street E Block</ion-label>
+                                          
+                                          </ion-col>
+                                              </ion-row>
+  
+                                              
+                                      <ion-row>
+                                        <ion-col>
+                                         
+                                            <div id="marterial" class="titles">Materials ?</div>
+                                        
+                                        
+                                        </ion-col>
+  
+                                        <ion-col>
+                                          <ion-item>
+                                           
+                                            <ion-toggle [(ngModel)]="sausage" ></ion-toggle>
+                                          </ion-item>
+                                          </ion-col>
+                                          
+                                              </ion-row>
+                                            <hr id="hrrow">
+  
+                                            <ion-row>
+                                                <ion-col>
+                                                   
+                                                    <div class="titles"><b>Total</b></div>
+                                                 
+                                                </ion-col>
+                                                <ion-col>
+                                                  <ion-label class="titles"><b>180 Rs</b></ion-label>
+                                                  
+                                                  </ion-col>
+                                                      </ion-row>
+                                              <hr>
+                                            <ion-row>
+                                            <ion-col>
+                                              <label id="paymentMethod" class="titles">Payment Method</label>
+  
+                                            </ion-col>
+                                            </ion-row>
+  
+                                              
+                                        
+  
+                                              <ion-list radio-group>
+                                               
+                                                  <ion-row>
+                                                      <ion-col>
+                                                    <ion-item>
+                                                      <ion-radio value="cashOnService" checked></ion-radio>
+                                                      <ion-label>cash on service</ion-label>
+                                                    </ion-item>
+                                                  </ion-col>
+                                                  <ion-col>
+                                                      <ion-item>
+                                                        <ion-radio value="useWallet"></ion-radio>
+                                                        <ion-label>use Wallet</ion-label>
+                                                      </ion-item>
+                                                    </ion-col>
+                                                  </ion-row>
+                                               
+  
+  
+                                                
+  
+                                              </ion-list>
+                                            
+  
+  
+                                              
+                                      <ion-row>
+                                        <ion-col>
+                                            <button (click)="confirmorder()" ion-button full>Book Now</button>
+                                          
+                                          </ion-col>
+                                              </ion-row>
+
+                                              <ion-row >
+                                                  <ion-col>
+                                                      <button (click)="cancelorder()"  ion-button full>Cancel Order</button>
+                                                    
+                                                    </ion-col>
+                                                        </ion-row>
+  
+                                              
+            </ion-card>
+        
+  
+  
+  </ion-content>
+  
